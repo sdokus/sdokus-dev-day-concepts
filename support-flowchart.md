@@ -46,10 +46,23 @@ style G fill:#FF5733,stroke:#ffffff,stroke-width:2px;
         System Information
         Conflict Test
     ]
+    click B2 href "#system-info"
     B2 ---> C2
     C2[Staging Site]
+    click C2 href "#staging-site"
     C2 ---> D2
     D2[DB Dump]
+    click D2 href "#db-dump"
 
 style A2 fill:#6FBF56,stroke:#ffffff,stroke-width:2px;
 ```
+
+## Info Collection
+### System Info
+- Make sure that you check for the site's language 
+
+### Staging Site
+- You can match the customer's settings for testing purposes by using [this plugin](https://theeventscalendar.com/extensions/settings-import-export/)
+
+### DB Dump
+- How to use a database dump
