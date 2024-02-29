@@ -39,5 +39,17 @@ style F fill:#FF5733,stroke:#ffffff,stroke-width:2px;
 style K fill:#FF5733,stroke:#ffffff,stroke-width:2px;
 style G fill:#FF5733,stroke:#ffffff,stroke-width:2px;
 
+%% Second Graph - Information Gathering
+    A2[Information Needed By Step]
+    A2 ----> B2
+    B2[
+        System Information
+        Conflict Test
+    ]
+    B2 ---> C2
+    C2[Staging Site]
+    C2 ---> D2
+    D2[DB Dump]
 
+style A2 fill:#6FBF56,stroke:#ffffff,stroke-width:2px;
 ```
