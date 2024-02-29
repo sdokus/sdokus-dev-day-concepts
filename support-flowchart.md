@@ -33,7 +33,11 @@ graph TD
     J --> |Yes| K
     J --> |No| I
     K[Most likely corrupt data]
-
+    
+style A fill:#6FBF56,stroke:#ffffff,stroke-width:2px;
+style F fill:#FF5733,stroke:#ffffff,stroke-width:2px;
+style K fill:#FF5733,stroke:#ffffff,stroke-width:2px;
+style G fill:#FF5733,stroke:#ffffff,stroke-width:2px;
 
 
 ```
