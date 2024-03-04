@@ -10,7 +10,7 @@ graph TD
     C[Does the issue persist with only TEC plugins and a default theme?]
     D[Ask the customer to clarify]
     D -->|Only move on once we have a clear 
-    understanding of the issue|A
+    understanding of the issue|B
     C -->|Yes|E
     C -->|No|F
     E[Can you recreate the unintended behavior on a sandbox?]
