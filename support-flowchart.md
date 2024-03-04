@@ -30,8 +30,9 @@ graph TD
     N --> G
     J[Is the issue only happening on one instance
     - i.e. a single event or single ticket?]
-    J --> |Yes| K
     J --> |No| I
+    J --> |Yes| K
+    
     K[Most likely corrupt data]
     
 style A fill:#6FBF56,stroke:#ffffff,stroke-width:2px;
