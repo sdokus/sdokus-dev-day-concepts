@@ -57,13 +57,13 @@ C2[
 System Information
 Conflict Test
 ]
-click C2 href "#system-info"
+click C2 href "https://github.com/sdokus/sdokus-dev-day-concepts/blob/main/support-flowchart.md#system-info"
 C2 ---> D2
 D2[Staging Site]
-click D2 href "#staging-site"
+click D2 href "https://github.com/sdokus/sdokus-dev-day-concepts/blob/main/support-flowchart.md#staging-site"
 D2 ---> E2
 E2[DB Dump]
-click E2 href "#db-dump"
+click E2 href "https://github.com/sdokus/sdokus-dev-day-concepts/blob/main/support-flowchart.md#db-dump"
 
 style A2 fill: #6FBF56, stroke: #ffffff, stroke-width: 2px;
 ```
