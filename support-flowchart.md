@@ -104,9 +104,11 @@ style A2 fill: #6FBF56, stroke: #ffffff, stroke-width: 2px;
   - Any Slack conversations that are relevant 
 
 ## Slack Template
-When asking a question in Slack, try out this template: <br/>
+When asking a question in Slack, try out this template (copy and paste into Slack):
+
 
 :eyebrow: Expected vs Experienced Behavior: [This is what happens when I try to recreate on a sandbox] vs [this is what happens on the client's site]
+
 :pencil: Steps to Reproduce:
 ```
    1. [i.e. Have these plugins installed]
