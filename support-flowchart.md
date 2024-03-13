@@ -7,10 +7,10 @@ graph TD
     B[Is it clear what is the experienced behavior versus the expected behavior?]
     B -->|Yes| C
     B -->|No| D
-    C[Does the issue persist with only TEC plugins and a default theme?]
     D[Ask the customer to clarify]
     D -->|Only move on once we have a clear 
     understanding of the issue|B
+    C[Does the issue persist with only TEC plugins and a default theme?]
     C -->|Yes|E
     C -->|No|F
     E[Can you recreate the unintended behavior on a sandbox?]
@@ -47,23 +47,24 @@ style G fill:#FF5733,stroke:#ffffff,stroke-width:2px;
         System Information
         Conflict Test
     ]
-    click B2 href "#system-info"
+    click B2 href "/#system-info"
     B2 ---> C2
     C2[Staging Site]
-    click C2 href "#staging-site"
+    click C2 href "/#staging-site"
     C2 ---> D2
     D2[DB Dump]
-    click D2 href "#db-dump"
+    click D2 href "/#db-dump"
 
 style A2 fill:#6FBF56,stroke:#ffffff,stroke-width:2px;
 ```
 
 ## Info Collection
 ### System Info
-- Make sure that you check for the site's language 
+- Make sure that you check for the site's language (there have been some issues with French sites, specifically)
+- Look for the site's migration status - if the migration is incomplete, even if it is likely unrelated we should offer to help get them migrated. 
 
 ### Staging Site
 - You can match the customer's settings for testing purposes by using [this plugin](https://theeventscalendar.com/extensions/settings-import-export/)
 
 ### DB Dump
-- How to use a database dump
+- [How to use a database dump](https://www.loom.com/share/471ae3b4fcaf4a7f8df2e67a7feb37a4)
