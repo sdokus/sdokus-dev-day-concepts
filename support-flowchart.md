@@ -105,13 +105,14 @@ style A2 fill: #6FBF56, stroke: #ffffff, stroke-width: 2px;
 
 ## Slack Template
 When asking a question in Slack, try out this template: <br/>
-```text
+
 :eyebrow: Expected vs Experienced Behavior: [This is what happens when I try to recreate on a sandbox] vs [this is what happens on the client's site]
 :pencil: Steps to Reproduce:
+```
    1. [i.e. Have these plugins installed]
    2. [Steps to reproduce]
    3. [Steps to reproduce]
+```
 :exclamation: Important Info: [System Info summarized (i.e. PHP version, migration status, anything specific to the issue worth noting), things you've already ruled out]
 
 :eye-in-speech-bubble: TL;DR: [In one sentence, what information are you hoping to get from this question?]
-```
