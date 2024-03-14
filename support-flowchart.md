@@ -70,33 +70,32 @@ style A2 fill: #6FBF56, stroke: #ffffff, stroke-width: 2px;
 
 ## Info Collection
 ### Steps To Recreate
-- If the steps to recreate are unclear, try recording a video of the steps that you are taking to try to recreate and ask the customer to record a similar video showcasing any steps you might be missing
-- Once you have the steps, ask them to complete a conflict test - if the issue goes away it is likely a conflict
-- If the issue persists, follow the steps on a fresh WP sandbox - if you can recreate the issue then it is likely a bug in our code - open a ticket in JIRA
+- If the steps to recreate are unclear, try recording a video of the steps that you are taking to try to recreate and ask the customer to record a similar video showcasing any steps you might be missing.
+- Once you have the steps, ask them to complete a conflict test - if the issue goes away it is likely a conflict.
+- If the issue persists, follow the steps on a fresh WP sandbox - if you can recreate the issue then it is likely a bug in our code - open a ticket in JIRA.
 
 ### System Info
-- Make sure that you check for the site's language (there have been some issues with French sites, specifically)
-- Look for Caching plugins - if necessary, have the customer temporarily disable caching and retest
-- Look at which hosting provider they are using - if you suspect it could be a server issue, make sure they have everything configured based on our KB for that hosting provider
+- Make sure that you check for the site's language (there have been some issues with French sites, specifically).
+- Look for Caching plugins - if necessary, have the customer temporarily disable caching and retest.
+- Look at which hosting provider they are using - if you suspect it could be a server issue, make sure they have everything configured based on our KB for that hosting provider.
 - Look for the site's migration status - if the migration is incomplete, even if it is likely unrelated we should offer to help get them migrated. 
-- Even if a customer says they have completed a conflict test, do not fully rule out the possibility until you can test yourself
-
+- Even if a customer says they have completed a conflict test, do not fully rule out the possibility until you can test yourself.
 
 ### Staging Site
-- From step 1, you should have a clear understanding of steps the customer is taking to reproduce the issue; once you have access to the staging site complete those steps to see if you can also reproduce
-- Next, eliminate extra factors by disabling all other plugins and switching to a default theme and try to reproduce the issue again.
-- You can match the customer's settings for testing purposes by using [this plugin](https://theeventscalendar.com/extensions/settings-import-export/)
-    - This can be used if the customer cannot create a staging site for whatever reason
-    - This also could be an alternative option to a db dump 
+- From step 1, you should have a clear understanding of the steps the customer is taking to reproduce the issue; once you have access to the staging site complete those steps to see if you can also reproduce.
+- Next, eliminate extra factors by disabling all other plugins, switching to a default theme, and trying to reproduce the issue again.
+- You can match the customer's settings for testing purposes by using [this plugin](https://theeventscalendar.com/extensions/settings-import-export/).
+    - This can be used if the customer cannot create a staging site for whatever reason.
+    - This also could be an alternative option to a db dump.
 
 ### DB Dump
-- [How to use a database dump](https://www.loom.com/share/471ae3b4fcaf4a7f8df2e67a7feb37a4)
-- Once you have the db set up locally, try the steps to reproduce again
+- [How to use a database dump](https://www.loom.com/share/471ae3b4fcaf4a7f8df2e67a7feb37a4).
+- Once you have the db set up locally, try the steps to reproduce again.
   - If you can reproduce, you now have in depth access to debugging tools to try to narrow down where the root of the issue is!
   - If you cannot reproduce, it is more likely to be related to something on the server side of things since that is the last variable remaining. 
 
 ### Edge Case
-- If you've made it through the whole workflow and believe that the issue is an edgecase that needs developer investigation, open a ticket in JIRA with the new Edge Case Template (coming soon)
+- If you've made it through the whole workflow and believe that the issue is an edge case that needs developer investigation, open a ticket in JIRA with the new Edge Case Template (coming soon).
 - Add as much detail as possible, including:
   - Steps to reproduce 
   - Troubleshooting steps already taken 
