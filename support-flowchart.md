@@ -136,10 +136,11 @@ vs [this is what is happening on the client's site]
    4. [Link to exactly where to see/inspect the issue]
 ```
 
-:exclamation: Important
-Info: [System Info summarized (i.e. PHP version, migration status, anything specific to the issue worth noting), things you've already ruled out]
+:exclamation: Important Info: [System Info summarized (i.e. PHP version, migration status, anything specific to the issue worth noting), things you've already ruled out]
 
 :link: Ref: [ZD Link]
+
+>_Note! Only include **Important Info** if there is important hand off information directly related to where the issue is at. You can skip this one if there is nothing out of the ordinary that you've found._
 
 ## Edge Case Template
 
