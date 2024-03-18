@@ -122,25 +122,24 @@ style A2 fill: #6FBF56, stroke: #ffffff, stroke-width: 2px;
 
 When asking a question in Slack, try out this template (copy and paste into Slack):
 
-:question: TL;DR: [In one sentence, what information are you hoping to get from this question?]
-
-:eyebrow: Expected vs Experienced Behavior: [This is what happens when I try to recreate on a sandbox]
-vs [this is what is happening on the client's site]
-
-:pencil: Steps to Reproduce:
-
-```
-   1. [i.e. Have these plugins installed]
-   2. [Step to reproduce]
-   3. [Step to reproduce]
-   4. [Link to exactly where to see/inspect the issue]
-```
-
-:exclamation: Important Info: [System Info summarized (i.e. PHP version, migration status, anything specific to the issue worth noting), things you've already ruled out]
-
-:link: Ref: [ZD Link]
-
->_Note! Only include **Important Info** if there is important hand off information directly related to where the issue is at. You can skip this one if there is nothing out of the ordinary that you've found._
+:question:  TL;DR:
+In one sentence, what information are you hoping to get from this question?
+:+1: Expected behavior
+This is what happens when I try to recreate on a sandbox.
+:face_with_raised_eyebrow: Experienced behavior
+This is what is happening on the client’s site.
+:footprints: Steps to reproduce
+Step 1.
+Step 2.
+Step 3.
+:desktop_computer: System
+PHP: 8.0
+Migration status
+Anything specific to the issue worth noting
+:link: Links
+ZD:
+Client site:
+Sandbox:
 
 ## Edge Case Template
 
