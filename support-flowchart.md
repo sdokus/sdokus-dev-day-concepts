@@ -1,16 +1,23 @@
 # Support Workflow
 
+This workflow is intended as a guide for when you're feeling stuck while troubleshooting support tickets. It is NOT meant as a "one size fits all" approach for all tickets - common sense and critical thinking come first! 
+
+
+
 ```mermaid
 graph TD
     A[Start Here]
     A --> B
     B[Is it clear what is the experienced behavior versus the expected behavior?]
-    B -->|Yes| C
+    B -->|Yes| CC
     B -->|No| D
     D[Ask the customer to clarify 
 the steps needed to recreate]
 D -->|Only move on once we have a
 clear understanding of the issue|B
+
+CC[Search JIRA, ZD, and Slack for existing threads]
+CC-->|If there are no related existing threads/tickets, continue testing|C
 
 C[Does the issue persist with only TEC plugins and a default theme?]
 C -->|Yes|E
@@ -51,7 +58,7 @@ A2[Information Needed By Step]
 A2 --> B2
 B2[Steps to Recreate]
 click B2 href "#steps-to-recreate"
-B2 --> C2
+B2 ---> C2
 C2[
 System Information
 Conflict Test
@@ -63,6 +70,9 @@ click D2 href "#staging-site"
 D2 ---> E2
 E2[DB Dump]
 click E2 href "#db-dump"
+E2 ---> F2
+F2[Edge Case]
+click F2 href "#edge-case"
 
 style A2 fill: #6FBF56, stroke: #ffffff, stroke-width: 2px;
 ```
@@ -74,7 +84,7 @@ style A2 fill: #6FBF56, stroke: #ffffff, stroke-width: 2px;
 - If the steps to recreate are unclear, try recording a video of the steps that you are taking to try to recreate and
   ask the customer to record a similar video showcasing any steps you might be missing.
 - Once you have the steps, ask them to complete a conflict test - if the issue goes away it is likely a conflict.
-- If the issue persists, follow the steps on a fresh WP sandbox - if you can recreate the issue then it is likely a bug
+- If the issue persists even after a conflict test, follow the steps on a fresh WP sandbox - if you can recreate the issue then it is likely a bug
   in our code - open a ticket in JIRA.
 
 ### System Info
@@ -108,38 +118,53 @@ style A2 fill: #6FBF56, stroke: #ffffff, stroke-width: 2px;
     - If you cannot reproduce, it is more likely to be related to something on the server side of things since that is
       the last variable remaining.
 
-### Edge Case
-
-- If you've made it through the whole workflow and believe that the issue is an edge case that needs developer
-  investigation, open a ticket in JIRA with the new Edge Case Template (coming soon).
-- Add as much detail as possible, including:
-    - Steps to reproduce
-    - Troubleshooting steps already taken
-    - A TL;DR of where things stand
-    - Any Slack conversations that are relevant
 
 ## Slack Template
 
-When asking a question in Slack, try out this template (copy and paste into Slack):
+When asking a question in Slack, try out this template (copy and paste into Slack). Try to use keywords to improve future search-ability in Slack:
 
-:question:  TL;DR:
-In one sentence, what information are you hoping to get from this question?
-:+1: Expected behavior
-This is what happens when I try to recreate on a sandbox.
-:face_with_raised_eyebrow: Experienced behavior
-This is what is happening on the client’s site.
-:footprints: Steps to reproduce
-Step 1.
-Step 2.
-Step 3.
-:desktop_computer: System
-PHP: 8.0
-Migration status
-Anything specific to the issue worth noting
-:link: Links
-ZD:
-Client site:
-Sandbox:
+> :question:  TL;DR:
+>In one sentence, what information are you hoping to get from this question?
+>
+>:+1: Expected behavior
+>This is what happens when I try to recreate on a sandbox.
+>
+>:face_with_raised_eyebrow: Experienced behavior
+>This is what is happening on the client’s site.
+>
+>:footprints: Steps to reproduce
+>
+>Step 1.
+> 
+>Step 2.
+> 
+>Step 3.
+>
+>:desktop_computer: System
+>
+>PHP: 8.0
+>
+>Migration status
+>
+>Anything specific to the issue worth noting
+>
+>:link: Links
+>
+>ZD:
+>
+>Client site:
+>
+>Sandbox:
+
+### Edge Case
+
+- If you've made it through the whole workflow and believe that the issue is an edge case that needs developer
+  investigation, open a ticket in JIRA with the new Edge Case Template (below).
+- Add as much detail as possible, including:
+  - Steps to reproduce
+  - Troubleshooting steps already taken
+  - A TL;DR of where things stand
+  - Any Slack conversations that are relevant
 
 ## Edge Case Template
 
